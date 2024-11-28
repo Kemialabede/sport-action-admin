@@ -1,0 +1,64 @@
+.indicator {
+    padding: 7.5px 20px;
+    width: fit-content;
+    display: flex;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 24px;
+    text-transform: capitalize;
+
+    &.pending {
+        background: #2B2A2A;
+        color: #FDB903;
+    }
+
+    &.completed {
+        background: #2B2A2A;
+        color: #00B015;
+    }
+
+    &.ongoing {
+        background: #2B2A2A;
+        color: #0693FF;
+    }
+
+    &.active {
+        background: #2B2A2A;
+        color: #34A853;
+    }
+
+    &.banned {
+        background: #2B2A2A;
+        color: #D61010;
+    }
+
+    &.unapproved {
+        background: #2B2A2A;
+        color: #D61010;
+    }
+}
+
+.statusIndicatorBG {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: 2px 12px;
+    border-radius: 12px;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.4px;
+
+    &.approved {
+        background: #e7f6ec;
+    }
+
+    &.not_ready {
+        background: #fbeae9;
+    }
+
+    &.active {
+        background: #e5f1f9;
+    }
+}

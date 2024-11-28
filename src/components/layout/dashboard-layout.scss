@@ -1,0 +1,90 @@
+@import '../../styles/responsive.scss';
+
+.dashboard-layout {
+    display: flex;
+    height: 100vh;
+
+    .sidebar {
+        position: sticky;
+        top: 0;
+        width: 280px;
+        height: 100%;
+        background-color: #020202;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        z-index: 999;
+        transition: all 0.3s;
+    }
+
+    .main-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-left: 280px; // Added this to start main content after the sidebar
+
+        @include sm {
+            padding-left: unset;
+        }
+
+        .header {
+            padding: 40px 24px 36px;
+        }
+
+        .content-area {
+            padding: 0 24px 35px 24px;
+        }
+    }
+}
+
+.auth-layout {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: #020202;
+
+    &__form {
+        width: 590px;
+        padding: 0 35px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+
+        @include sm {
+            margin-top: 24px;
+            padding: 0 20px;
+        }
+
+        img {
+            margin-bottom: 20px;
+
+            @include sm {
+                margin-bottom: 10px;
+            }
+        }
+
+        // justify-content: center;
+
+        &__heading {
+            text-align: center;
+
+            h2 {
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 32px;
+                color: #fff;
+                margin-bottom: 4px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #fff;
+
+                @include sm {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

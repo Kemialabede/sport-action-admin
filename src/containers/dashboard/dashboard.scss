@@ -1,0 +1,131 @@
+@import '../../styles/responsive.scss';
+
+.aggregateContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(266px, 1fr));
+    grid-gap: 16px;
+
+    @include sm {
+        grid-template-columns: repeat(auto-fit, minmax(165px, 165px));
+    }
+
+    &__card {
+        background: #0F0D0D;
+        border-radius: 8px;
+        padding: 16px;
+        color: #fff;
+
+        &__percentage {
+            padding: 0 6px;
+            background: #FFBA0033;
+            color: #FDB903;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 14px;
+            text-align: center;
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        &__duration {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 14px;
+            color: #fff;
+        }
+
+        &__count {
+            margin-top: 9px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        h5 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            // margin-bottom: 16px;
+        }
+    }
+}
+
+.recentGamesHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 46px 0 22px 0;
+
+    h2 {
+        font-size: 18px;
+        line-height: #1e1e1e;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        p {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        svg {
+            color: #808080;
+        }
+    }
+}
+
+.analyticsContainer {
+    &__title {
+        font-size: 16px;
+        line-height: 24px;
+        color: #2c2c2c;
+        font-weight: 400;
+        margin-bottom: 9px;
+        margin-top: 40px;
+    }
+
+    &__content {
+        border: 1px solid var(--Tertiary-04, #d9d9d9);
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 16px 22px;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            div {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                h2 {
+                    font-size: 16px;
+                    line-height: 16px;
+                    font-weight: 600;
+                    letter-spacing: -2%;
+                }
+            }
+        }
+
+        &__price {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 32px;
+            color: #292929;
+        }
+    }
+}
+
+.flexContainers {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}

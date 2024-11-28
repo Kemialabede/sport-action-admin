@@ -1,0 +1,94 @@
+@import '../../styles/responsive.scss';
+
+.pagination {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    color: #888888;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 16px 25px 10px 25px;
+
+    ul {
+        display: flex !important;
+        text-align: center;
+        width: auto;
+        padding: 16px 0;
+        margin: unset;
+        list-style-type: none;
+        font-size: 14px;
+        color: #98a2b3;
+        line-height: 20.3px;
+    }
+
+    ul li {
+        padding: 8px 15px;
+        margin-right: 8px;
+        margin-top: -10px;
+
+        .previous {
+            width: 30px;
+        }
+    }
+
+    &__count {
+        font-weight: 500;
+        color: #2d2d2d;
+        line-height: 20.3px;
+    }
+
+    &__container {
+        display: flex;
+        width: unset;
+
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 40px;
+            padding: 2px;
+            font-size: 14px;
+            height: 20px;
+            text-align: center;
+        }
+    }
+
+    &__arrow {
+        color: #344054;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+}
+
+.activePaginate {
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 0 9.5px;
+    color: #000;
+    line-height: 20.3px;
+}
+
+.next {
+    border: 1px solid #d0d5dd !important;
+    border-radius: 8px !important;
+    width: 36px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.previous {
+    border: 1px solid #d0d5dd !important;
+    border-radius: 8px !important;
+    width: 36px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+}

@@ -1,0 +1,9 @@
+@import '../../styles/responsive.scss';
+
+.inputContainer {
+    margin: 48px 0;
+
+    @include sm {
+        margin: 37px 0;
+    }
+}

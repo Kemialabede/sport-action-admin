@@ -1,0 +1,227 @@
+.generalSettings {
+    background: #ffffff;
+    width: 100%;
+    margin-top: 46px;
+    border-radius: 8px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 24px;
+        border-bottom: 1px solid #d4d9d9;
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #404647;
+        }
+
+        button {
+            padding: 10px 40px;
+            border-radius: 8px;
+            border: 1px solid #aab2b3;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            background: unset;
+            color: #2c2c2c;
+            outline: none;
+            cursor: pointer;
+        }
+
+        &:last-child {
+            border-bottom: unset;
+        }
+    }
+}
+
+.input_container {
+    margin-bottom: 16px !important;
+}
+
+.signalRoomPlans {
+    &__priceFormContainer {
+        margin-top: 20px;
+        border-bottom: 1px solid #d4d9d9;
+
+        &__input {
+            margin-bottom: 16px !important;
+
+            &:last-child {
+                margin-bottom: 24px !important;
+            }
+        }
+    }
+}
+
+.profileInfoContainer {
+    width: 432px;
+    border-radius: 16px;
+    margin: 150px auto 0 auto;
+    padding: 24px;
+
+    &__avatar {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 27px;
+    }
+
+    &__heading {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+
+    &__details {
+        p {
+            &:first-child {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                margin-bottom: 4px;
+                color: #808080;
+            }
+
+            &:last-child {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #fff;
+                margin-bottom: 8px;
+            }
+        }
+
+        &__password {
+            border-top: 1px dashed #e6e6e6;
+            border-bottom: 1px dashed #e6e6e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            padding-top: 11px;
+
+            &__changePassword {
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 24px;
+                text-decoration: underline;
+                color: #1a7440;
+            }
+
+            &__details {
+                p {
+                    &:first-child {
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: #fff;
+                        margin-bottom: 8px;
+                    }
+
+                    &:last-child {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: #fff;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.changePasswordContainer {
+    margin: 0 auto;
+    border-radius: 12px;
+
+    &__header {
+        text-align: center;
+        border-bottom: 1px solid #e6e6e6;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    &__body {
+
+        &__inputLabel {
+            color: #808080 !important;
+            margin-bottom: 8px !important;
+        }
+    }
+}
+
+.adminAccounts {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        padding: 24px 24px 16px 24px;
+        background-color: #ffffff;
+
+        h2 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+}
+
+.permissionContainer {
+    padding: 24px 0 11px 0;
+
+    &__heading {
+        h2 {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #808080;
+            margin-bottom: 12px;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            color: #2a2e2f;
+        }
+    }
+
+    &__list {
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #828a8c;
+            }
+
+            &:last-child {
+                margin-bottom: unset;
+            }
+        }
+    }
+}

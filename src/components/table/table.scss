@@ -1,0 +1,197 @@
+@import '../../styles/responsive.scss';
+
+table tr td,
+table tr td {
+    text-align: center;
+}
+
+tr {
+    @include md {
+        border: 1px solid #ccc;
+    }
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+
+    &__header {
+        th {
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+            line-height: 20px;
+            padding: 10px 24px;
+            background: #1E1E1E;
+            text-align: left;
+            white-space: nowrap;
+
+            &:first-child {
+                text-align: left;
+                border-top-left-radius: 8px;
+            }
+
+            &:last-child {
+                text-align: center;
+                border-top-right-radius: 8px;
+            }
+        }
+    }
+
+    &__body {
+        td {
+            padding: 16px 24px;
+            border-bottom: 1px solid #1E1E1E;
+            font-size: 16px;
+            line-height: 20px;
+            background: #0F0D0D;
+            text-align: left;
+            color: #fff;
+
+            div {
+                // &:last-child {
+                //     text-align: right !important;
+                //     text-align: -webkit-right !important;
+
+                //     @include sm {
+                //         text-align: left !important;
+                //     }
+                // }
+            }
+
+            &:last-child {
+                text-align: right;
+                // text-align: -webkit-right !important;
+                position: relative;
+                right: 0;
+
+                // @include lg {
+                //     text-align: left !important;
+                // }
+            }
+
+            // @include sm {
+            //     text-align: left;
+            // }
+
+            // div {
+            //     text-align: left;
+            // }
+        }
+    }
+
+    &__empty {
+        // position: absolute;
+        // left: 50%;
+        text-align: center !important;
+        text-align: -webkit-center !important;
+        background-color: white;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 50px 0;
+
+        @include sm {
+            text-align: center !important;
+            text-align: -webkit-center !important;
+        }
+    }
+}
+
+.logo {
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #ffffff;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+        margin-right: 10px;
+    }
+}
+
+.action-button {
+    width: auto;
+    text-align: right;
+    padding: 4.5px 7px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 13px;
+    display: flex;
+    align-items: end;
+}
+
+.skeleton {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    &__shimmer {
+        height: 42px;
+        min-width: 250px;
+        background: linear-gradient(to right, #eff1f3 4%, #f8f9fb 25%, #eff1f3 36%);
+        background-size: 1000px 100%;
+        animation: shimmer 3s infinite linear;
+        margin-bottom: 1rem;
+
+        &--sm {
+            min-width: 60px;
+            margin-left: 1rem;
+        }
+
+        &--lg {
+            max-width: 400px;
+            height: 24px;
+        }
+
+        &--slim {
+            height: 24px;
+            max-width: 350px;
+        }
+    }
+
+    &__head {
+        height: 54px;
+        background: linear-gradient(to right, #eff1f3 4%, #f8f9fb 25%, #eff1f3 36%);
+        background-size: 1000px 100%;
+        animation: shimmer 1s infinite linear;
+        margin-bottom: 2rem;
+    }
+
+    &__row {
+        border-bottom: 1px solid #f8f9fb;
+        display: flex;
+        justify-content: stretch;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    &__item {
+        height: 12px;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        background: linear-gradient(to right, #eff1f3 4%, #f8f9fb 25%, #eff1f3 36%);
+        background-size: 1000px 100%;
+        flex-grow: 1;
+        animation: shimmer 2s infinite linear;
+
+        &:not(:last-of-type) {
+            margin-right: 50px;
+        }
+    }
+
+    &__empty {
+        text-align: center;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}

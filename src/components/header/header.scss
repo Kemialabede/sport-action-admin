@@ -1,0 +1,47 @@
+@import '../../styles/responsive.scss';
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 24px 36px 24px;
+
+    // @include sm {
+    //     flex-direction: column;
+    // }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    // &__avatar {
+    //     width: 36px;
+    //     height: 36px;
+    // }
+
+    &__userProfile {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &__name {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+            }
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
