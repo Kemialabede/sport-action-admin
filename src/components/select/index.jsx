@@ -12,6 +12,7 @@ const customStyles = {
     outlineColor: 'none',
     fontWeight: 400,
     fontFamily:  "Poppins",
+    background: 'transparent'
   }),
 };
 
